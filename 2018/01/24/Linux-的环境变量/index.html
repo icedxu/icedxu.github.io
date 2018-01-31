@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="icedxu的博客">
 <meta property="og:description" content="在Linux中大部分软件的安装都需要自己去配置环境变量的，有些IDE是会自己去链接一些配置文件，但是当你不用IDE，而是用命令去编译源码时，这是就需要配置环境变量了。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-24T01:56:14.536Z">
+<meta property="og:updated_time" content="2018-01-31T04:01:01.471Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux 的环境变量（持续更新中……）">
 <meta name="twitter:description" content="在Linux中大部分软件的安装都需要自己去配置环境变量的，有些IDE是会自己去链接一些配置文件，但是当你不用IDE，而是用命令去编译源码时，这是就需要配置环境变量了。">
@@ -81,7 +81,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/icedxu" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
@@ -122,7 +122,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/icedxu" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
@@ -174,8 +174,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在Linux中大部分软件的安装都需要自己去配置环境变量的，有些IDE是会自己去链接一些配置文件，但是当你不用IDE，而是用命令去编译源码时，这是就需要配置环境变量了。<br><a id="more"></a><br>对所有的用户有效的环境变量在/etc/profile文件中配置；只对当前用户有效的环境变量则在Home目录下的.bashrc或.bash_profile文件中配置。<br>（对于以下的配置文件中，等号（=）前面和后面是不要加空格的）</p>
-<p>打开系统的环境变量配置文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/project</span><br></pre></td></tr></table></figure></p>
+        <p>在Linux中大部分软件的安装都需要自己去配置环境变量的，有些IDE是会自己去链接一些配置文件，但是当你不用IDE，而是用命令去编译源码时，这是就需要配置环境变量了。<br><a id="more"></a><br> 对所有的用户有效的环境变量在etc/profile文件中配置；只对当前用户有效的环境变量则在Home目录下的 .bashrc 或 .bash_profile 文件中配置。（对于以下的配置文件中，等号（=）前面和后面是不要加空格的）<br>打开系统的环境变量配置文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/project</span><br></pre></td></tr></table></figure></p>
 <h3 id="在PATH中找到可执行文件程序的路经"><a href="#在PATH中找到可执行文件程序的路经" class="headerlink" title="在PATH中找到可执行文件程序的路经"></a>在PATH中找到可执行文件程序的路经</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/bin   <span class="comment">#你自己可执行文件的路经</span></span><br></pre></td></tr></table></figure>
 <h3 id="gcc找到头文件的路经"><a href="#gcc找到头文件的路经" class="headerlink" title="gcc找到头文件的路经"></a>gcc找到头文件的路经</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> C_INCLUDE_PATH=/usr/include   <span class="comment">#你自己头文件的路经</span></span><br></pre></td></tr></table></figure>
 <h3 id="g-找到头文件的路经"><a href="#g-找到头文件的路经" class="headerlink" title="g++找到头文件的路经"></a>g++找到头文件的路经</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> C_INCLUDE_PATH=/usr/include   <span class="comment">#你自己头文件的路经</span></span><br></pre></td></tr></table></figure>
@@ -273,6 +272,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/01/31/QT在Windows和Linux上打包发布/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          QT在Windows和Linux上打包发布
+        
+      </div>
+    </a>
+  
   
     <a href="/2018/01/05/C语言中结构的存储分配/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">C语言中结构的存储分配</div>
@@ -310,7 +318,6 @@
 
   
 
-
           </div>
         </div>
       </div>
@@ -326,6 +333,9 @@
     </div>
   </div>
 </footer>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     </div>
     <script>
 	var yiliaConfig = {
