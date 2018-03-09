@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>QT在Windows和Linux上打包发布 | icedxu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）">
+  <meta name="description" content="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010） 先从cmd窗口进入所要打包发布的应用程序的目录中，本实例的目录为E:\软件\QT\qt\Win32\Release\然后在cmd命令窗口输入 windeployqt name.exe 就会把QT所需要的一些依赖全部copy到当前目录中，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="QT在Windows和Linux上打包发布">
 <meta property="og:url" content="http://yoursite.com/2018/01/31/QT在Windows和Linux上打包发布/index.html">
 <meta property="og:site_name" content="icedxu的博客">
-<meta property="og:description" content="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）">
+<meta property="og:description" content="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010） 先从cmd窗口进入所要打包发布的应用程序的目录中，本实例的目录为E:\软件\QT\qt\Win32\Release\然后在cmd命令窗口输入 windeployqt name.exe 就会把QT所需要的一些依赖全部copy到当前目录中，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-31T07:13:53.689Z">
+<meta property="og:updated_time" content="2018-03-09T12:58:09.670Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="QT在Windows和Linux上打包发布">
-<meta name="twitter:description" content="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）">
+<meta name="twitter:description" content="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010） 先从cmd窗口进入所要打包发布的应用程序的目录中，本实例的目录为E:\软件\QT\qt\Win32\Release\然后在cmd命令窗口输入 windeployqt name.exe 就会把QT所需要的一些依赖全部copy到当前目录中，">
   
     <link rel="alternative" href="/atom.xml" title="icedxu的博客" type="application/atom+xml">
   
@@ -174,9 +174,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="Windows环境下（本实例基于Windows7-x64-QT5-2-VS2010）"><a href="#Windows环境下（本实例基于Windows7-x64-QT5-2-VS2010）" class="headerlink" title="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）"></a>Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）</h4> <a id="more"></a>
-<blockquote>
-<p>先从cmd窗口进入所要打包发布的应用程序的目录中，本实例的目录为<code>E:\软件\QT\qt\Win32\Release\</code>然后在cmd命令窗口输入 <code>windeployqt name.exe</code> 就会把QT所需要的一些依赖全部copy到当前目录中，但是本程序是用<code>vs2010</code>编译的，所以要加上vs的运行库<code>msvcr100.dll、msvcp100.dll</code>  (release版，在<code>C:\Windows\System32\</code>)即可，然后用<code>Enigma Virtual Box</code>进行打包，添加所有的文件，然后生成就可，生成的文件就可以拿到别的机子上去运行，若失败的话，一般是由于vs和Qt的运行库版本错了，自己检查一下即可。</p>
+        <h4 id="Windows环境下（本实例基于Windows7-x64-QT5-2-VS2010）"><a href="#Windows环境下（本实例基于Windows7-x64-QT5-2-VS2010）" class="headerlink" title="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）"></a>Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）</h4><blockquote>
+<p>先从cmd窗口进入所要打包发布的应用程序的目录中，本实例的目录为<code>E:\软件\QT\qt\Win32\Release\</code>然后在cmd命令窗口输入 <code>windeployqt name.exe</code> 就会把QT所需要的一些依赖全部copy到当前目录中，<br> <a id="more"></a><br> 但是本程序是用<code>vs2010</code>编译的，所以要加上vs的运行库<code>msvcr100.dll、msvcp100.dll</code>  (release版，在<code>C:\Windows\System32\</code>)即可，然后用<code>Enigma Virtual Box</code>进行打包，添加所有的文件，然后生成就可，生成的文件就可以拿到别的机子上去运行，若失败的话，一般是由于vs和Qt的运行库版本错了，自己检查一下即可。</p>
 </blockquote>
 <h3 id="Linux环境下-（本实例基于CentOS6-5-4-QT5-4）"><a href="#Linux环境下-（本实例基于CentOS6-5-4-QT5-4）" class="headerlink" title="Linux环境下 （本实例基于CentOS6.5_4+QT5.4）"></a>Linux环境下 （本实例基于CentOS6.5_4+QT5.4）</h3><blockquote>
 <p>在应用程序所在的目录下打开终端，然后输入<br><code>bash $ ldd name</code><br>就可以知道此可执行文件依赖哪些包，需要的包主要有安装目录<code>platforms</code>中的文件,在本人的机子上此目录的路径为<code>/opt/Qt5.4.1/5.4/gcc_64/plugins/platforms</code> 将此目录（platforms）与可执行文件放在同级目录,还有<code>/opt/Qt5.4.1/5.4/gcc_64/lib/</code>  目录中的 <code>libQt5DBus.so.5、libQt5Core.so.5、libQt5Gui.so.5、 libQt5Widgets.so.5、libicudata.so.53、libicuuc.so.53、libicui18n.so.53</code>,这些文件可以放在与可执行文件同级目录、lib64、usr/lib64三个目录中任意一个即可。</p>
