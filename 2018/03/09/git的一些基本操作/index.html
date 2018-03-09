@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>icedxu的博客</title>
+  <title>git的一些基本操作 | icedxu的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="icedxu的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="git命令对于IT人员来说，几乎都会用到，以下是本人在工作中经常会用到的git命令，记录下来便于日后查看Git常用命令（在已安装了git客户端的情况下）123git --version   #查看git的版本信息git config --global user.name  #获取当前登录的用户名git config --global user.email  #获取当前登录的用户邮箱">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git的一些基本操作">
+<meta property="og:url" content="http://yoursite.com/2018/03/09/git的一些基本操作/index.html">
 <meta property="og:site_name" content="icedxu的博客">
+<meta property="og:description" content="git命令对于IT人员来说，几乎都会用到，以下是本人在工作中经常会用到的git命令，记录下来便于日后查看Git常用命令（在已安装了git客户端的情况下）123git --version   #查看git的版本信息git config --global user.name  #获取当前登录的用户名git config --global user.email  #获取当前登录的用户邮箱">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-09T12:53:59.852Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="icedxu的博客">
+<meta name="twitter:title" content="git的一些基本操作">
+<meta name="twitter:description" content="git命令对于IT人员来说，几乎都会用到，以下是本人在工作中经常会用到的git命令，记录下来便于日后查看Git常用命令（在已安装了git客户端的情况下）123git --version   #查看git的版本信息git config --global user.name  #获取当前登录的用户名git config --global user.email  #获取当前登录的用户邮箱">
   
     <link rel="alternative" href="/atom.xml" title="icedxu的博客" type="application/atom+xml">
   
@@ -150,16 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-git的一些基本操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-git的一些基本操作" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/09/git的一些基本操作/">git的一些基本操作</a>
+    <h1 class="article-title" itemprop="name">
+      git的一些基本操作
     </h1>
   
 
@@ -173,75 +175,44 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>git命令对于IT人员来说，几乎都会用到，以下是本人在工作中经常会用到的git命令，记录下来便于日后查看<br>Git常用命令（在已安装了git客户端的情况下）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git --version   <span class="comment">#查看git的版本信息</span></span><br><span class="line">git config --global user.name  <span class="comment">#获取当前登录的用户名</span></span><br><span class="line">git config --global user.email  <span class="comment">#获取当前登录的用户邮箱</span></span><br></pre></td></tr></table></figure></p>
-        
-          <a class="article-more-a" href="/2018/03/09/git的一些基本操作/#more">more >></a>
-        
+<a id="more"></a>
+<p><br></p>
+<h3 id="登录git"><a href="#登录git" class="headerlink" title="登录git"></a>登录git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">'userName'</span>  <span class="comment">#设置git账户，userName为用户的git账号</span></span><br><span class="line">git config --global user.email <span class="string">'email'</span>    <span class="comment">#设置用户的邮箱</span></span><br></pre></td></tr></table></figure>
+<h3 id="创建一个文件夹"><a href="#创建一个文件夹" class="headerlink" title="创建一个文件夹"></a>创建一个文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir <span class="built_in">test</span>  <span class="comment">#创建test文件夹</span></span><br><span class="line"><span class="built_in">cd</span>    <span class="built_in">test</span>  <span class="comment">#进入test文件夹</span></span><br></pre></td></tr></table></figure>
+<h3 id="初始化git仓库"><a href="#初始化git仓库" class="headerlink" title="初始化git仓库"></a>初始化git仓库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init  <span class="comment"># 在test文件夹下初始化一个仓库，此时文件里会有一个.git的隐藏文件夹</span></span><br></pre></td></tr></table></figure>
+<h3 id="创建忽略文件夹"><a href="#创建忽略文件夹" class="headerlink" title="创建忽略文件夹"></a>创建忽略文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git .gitignore  <span class="comment">#创建忽略文件夹，在此文件夹中可以写上要忽略的文件夹与文件，被忽略的文件夹及文件不会被提交到服务器端</span></span><br></pre></td></tr></table></figure>
+<h3 id="增加文件到暂存区中"><a href="#增加文件到暂存区中" class="headerlink" title="增加文件到暂存区中"></a>增加文件到暂存区中</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .  <span class="comment">#表示添加本文件夹中所有的文件到暂存区中</span></span><br><span class="line">git add -A <span class="comment">#表示添加本文件夹中所有的文件到暂存区中</span></span><br><span class="line">git add hello.word  <span class="comment">#表示添加hello.word到暂存区中</span></span><br><span class="line">git add <span class="string">"first.h"</span> <span class="string">"first.cpp"</span> <span class="comment">#表示添加first.h与first.cpp到暂存区中</span></span><br></pre></td></tr></table></figure>
+<h3 id="增加到版本库中及提交"><a href="#增加到版本库中及提交" class="headerlink" title="增加到版本库中及提交"></a>增加到版本库中及提交</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">'备注信息'</span>  <span class="comment">#将刚才添加到暂存区中文件提交到本地库中</span></span><br><span class="line">git rm  *.pro   <span class="comment">#删除本地库中以.pro结尾的文件</span></span><br><span class="line">git status      <span class="comment">#显示目录的状态，有没有添加或者修改文件</span></span><br><span class="line">git push        <span class="comment">#将本地库中文件提交到远程库中</span></span><br><span class="line">git push origin master  <span class="comment">#推送到主分支上</span></span><br></pre></td></tr></table></figure>
+<h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git branch dev       <span class="comment">#创建dev分支</span></span><br><span class="line">git checkout dev     <span class="comment">#切换到dev分支</span></span><br><span class="line">git checkout -b dev  <span class="comment">#创建分支并切换分支</span></span><br><span class="line"></span><br><span class="line">git branch -d dev    <span class="comment">#删除dev分支</span></span><br><span class="line">git commit -a -m <span class="string">"dev1"</span>   <span class="comment">#在分支上提交新的版本</span></span><br><span class="line">git merge dev             <span class="comment">#合并分支</span></span><br><span class="line">git <span class="built_in">log</span> --oneline --graph --decorate <span class="comment">#分支合并后显示log</span></span><br></pre></td></tr></table></figure>
+<h3 id="添加远程的仓库"><a href="#添加远程的仓库" class="headerlink" title="添加远程的仓库"></a>添加远程的仓库</h3><pre><code class="bash">git push origin master -u           <span class="comment">#获取最新代码</span>
+git remote add origin 你的仓库地址   <span class="comment">#连接远程仓库</span>
+git remote -v                       <span class="comment">#查看远程仓库</span>
+git remote rm origin               <span class="comment">#删除远程仓库</span>
+</code></pre>
+
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/09/git的一些基本操作/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-    <article id="post-QT在Windows和Linux上打包发布" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/31/QT在Windows和Linux上打包发布/">QT在Windows和Linux上打包发布</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/31/QT在Windows和Linux上打包发布/" class="archive-article-date">
-  	<time datetime="2018-01-31T03:11:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="Windows环境下（本实例基于Windows7-x64-QT5-2-VS2010）"><a href="#Windows环境下（本实例基于Windows7-x64-QT5-2-VS2010）" class="headerlink" title="Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）"></a>Windows环境下（本实例基于Windows7_x64+QT5.2+VS2010）</h4>
-        
-          <a class="article-more-a" href="/2018/01/31/QT在Windows和Linux上打包发布/#more">more >></a>
-        
-      
-
       
     </div>
     <div class="article-info article-info-index">
@@ -250,144 +221,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/31/QT在Windows和Linux上打包发布/">展开全文 >></a>
-        </p>
-      
 
       
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        
-        
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/03/09/git的一些基本操作/" alt="微信分享二维码">
     </div>
-</aside>
+</div>
 
-
-
-  
-    <article id="post-Linux-的环境变量" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/24/Linux-的环境变量/">Linux 的环境变量（持续更新中……）</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/24/Linux-的环境变量/" class="archive-article-date">
-  	<time datetime="2018-01-24T01:21:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在Linux中大部分软件的安装都需要自己去配置环境变量的，有些IDE是会自己去链接一些配置文件，但是当你不用IDE，而是用命令去编译源码时，这是就需要配置环境变量了。<br>
-        
-          <a class="article-more-a" href="/2018/01/24/Linux-的环境变量/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/24/Linux-的环境变量/">展开全文 >></a>
-        </p>
-      
-
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
   
-    <article id="post-C语言中结构的存储分配" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/05/C语言中结构的存储分配/">C语言中结构的存储分配</a>
-    </h1>
   
+    <a href="/2018/01/31/QT在Windows和Linux上打包发布/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">QT在Windows和Linux上打包发布</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        
-        <a href="/2018/01/05/C语言中结构的存储分配/" class="archive-article-date">
-  	<time datetime="2018-01-05T01:46:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本文所采用的环境是WIN7-64位，VC++6.0<br>在本环境中数据类型所占用的字节数如下<br>
-        
-          <a class="article-more-a" href="/2018/01/05/C语言中结构的存储分配/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/05/C语言中结构的存储分配/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -409,7 +311,13 @@
 
   
   
+  
 
+  
+
+  
+
+  
 
           </div>
         </div>
@@ -433,8 +341,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
